@@ -1,0 +1,16 @@
+digraph "classes" {
+rankdir=BT
+charset="utf-8"
+"users.tokens.AccountActivationTokenGenerator" [color="black", fontcolor="black", label=<{AccountActivationTokenGenerator|<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"users.models.CustomUser" [color="black", fontcolor="black", label=<{CustomUser|STATUS : tuple<br ALIGN="LEFT"/>description : TextField<br ALIGN="LEFT"/>email : EmailField<br ALIGN="LEFT"/>image : ImageField<br ALIGN="LEFT"/>status : CharField<br ALIGN="LEFT"/>|image_upload_to(instance)<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"users.backends.EmailBackend" [color="black", fontcolor="black", label=<{EmailBackend|<br ALIGN="LEFT"/>|authenticate(request, username, password)<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"users.forms.SignupForm.Meta" [color="black", fontcolor="black", label=<{Meta|fields : list<br ALIGN="LEFT"/>model<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"users.forms.UserInfoUpdate.Meta" [color="black", fontcolor="black", label=<{Meta|fields : list<br ALIGN="LEFT"/>model<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"users.forms.UpdatePass.Meta" [color="black", fontcolor="black", label=<{Meta|fields : list<br ALIGN="LEFT"/>model<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"users.forms.PassResetForm" [color="black", fontcolor="black", label=<{PassResetForm|captcha : ReCaptchaField<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"users.forms.SignInForm" [color="black", fontcolor="black", label=<{SignInForm|captcha : ReCaptchaField<br ALIGN="LEFT"/>password : CharField<br ALIGN="LEFT"/>username : CharField<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"users.forms.SignupForm" [color="black", fontcolor="black", label=<{SignupForm|email : EmailField<br ALIGN="LEFT"/>|save(commit)<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"users.forms.UpdatePass" [color="black", fontcolor="black", label=<{UpdatePass|<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"users.forms.UserInfoUpdate" [color="black", fontcolor="black", label=<{UserInfoUpdate|email : EmailField<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+"users.apps.UsersConfig" [color="black", fontcolor="black", label=<{UsersConfig|default_auto_field : str<br ALIGN="LEFT"/>name : str<br ALIGN="LEFT"/>|}>, shape="record", style="solid"];
+}
